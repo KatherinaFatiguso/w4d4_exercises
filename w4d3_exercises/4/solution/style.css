@@ -1,0 +1,22 @@
+.small {
+	font-size:12px;
+}
+.left {
+	text-align: left;
+}
+.bold {
+	font-weight:700;
+}
+.right  {
+	display:block; /*to show the effect*/
+	text-align:right;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.center {
+	display:block; /*to show the effect*/
+	text-align:center;
+}

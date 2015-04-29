@@ -1,0 +1,41 @@
+body, html {
+	margin:0;
+	padding:0;
+}
+
+.container {
+	background-color:#ccc;
+	width:1040px;
+	margin:0 auto;
+}
+
+.item {
+	border-color: #000;
+	border-style: solid;
+	background-color:red;
+	display:inline-block;
+	transition:all 1s;
+}
+
+.content {
+	background-color:green;
+	transition:all 1s;
+}
+
+input {
+	background:none;
+	border:1px solid #000;
+}
+
+.green {
+	color:green;
+}
+.red {
+	color:red;
+}
+.black {
+	color:#000;
+}
+.grey {
+	color:#ccc;
+}

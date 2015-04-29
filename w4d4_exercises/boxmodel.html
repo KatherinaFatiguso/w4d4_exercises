@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app="cf_example" ng-controller="AppCtrl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>W4D3 Exercises</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="boxmodel.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src="boxmodel.js"></script>
+
+    </head>
+    <body>
+
+        <p>
+            <span class="green">Green</span> = width&height, 
+            <span class="red">red</span> = padding, 
+            <span class="black">black</span> = border, 
+            <span>none</span> = margin (look at inspector).
+        </p>
+
+        <div class="container">
+            <div ng-repeat="item in items track by $index" ng-style="{margin: item.margin, borderWidth: item.border, padding: item.padding}" class="item">
+                <div ng-style="{width: item.width, height: item.height}" class="content">
+                    <label for="width">Width:</label>
+                    <input ng-model="item.width" id="width">
+                    <label for="height">Height:</label>
+                    <input ng-model="item.height" id="height">
+                    <label for="padding">Padding:</label>
+                    <input ng-model="item.padding" id="padding">
+                    <label for="border">Border:</label>
+                    <input ng-model="item.border" id="border">
+                    <label for="margin">Margin:</label>
+                    <input ng-model="item.margin" id="margin">
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
